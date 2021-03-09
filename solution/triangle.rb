@@ -14,6 +14,12 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  if a <= 0 || b <= 0 || c <= 0
+    raise TriangleError, "invalid arguments"
+  end
+  if (a + b) <= c || (a + c) <= b || (c + b) <= a
+    raise TriangleError, "invalid arguments"
+  end
   result = :scalene
   if a == b && b == c
     result = :equilateral
