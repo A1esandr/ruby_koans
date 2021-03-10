@@ -10,12 +10,7 @@ class DiceSet
   @arr
 
   def roll(i)
-    arr = i.times.map{ Random.rand(6) }
-    for ind in arr
-      if arr[ind] == 0
-        arr[ind] = 1
-      end
-    end
+    arr = i.times.map{ Random.rand(1..6) }
     @arr = arr
   end
 
