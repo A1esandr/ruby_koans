@@ -21,3 +21,9 @@ Student: #{name}
 1.\tQuestion: What is 4+5?
 \tAnswer: The sum of 4 and 5 is #{4+5}
 QUIZ
+
+puts "H".ord
+puts "e".ord
+puts "l".ord
+puts "l".ord
+puts "o".ord
